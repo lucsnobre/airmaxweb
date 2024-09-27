@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F7F8;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #7B214B; /* Cor destacada */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.cart img {
+    width: 24px;
+    height: 24px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.product-image {
+    resize: 1000px;
+    position: absolute;
+    top: 50%; 
+    left: 65%; 
+    width: 300px; 
+    z-index: 3;
+    transform: scale(1.5) translate(-40%, -40%) rotateZ(-37deg); 
+  
+}
+
+.black-square {
+    width: 1000px; /* Ajuste a largura conforme necessário */
+    height:2000px; /* Ajuste a altura conforme necessário */
+    background-color: black;
+    position: absolute; /* Permite posicionar o quadrado sobre a imagem */
+    top: 30%; /* Alinha verticalmente */
+    left: 97%; /* Ajuste a posição horizontal conforme necessário */
+    transform: translate(-70%, -70%); /* Centraliza o quadrado */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 115%, 0 93%); /* Cria a quebra na parte inferior */
+    z-index: -1; /* Coloca o quadrado atrás da imagem do tênis */
+}
+
+
+.product-info {
+    max-width: 600px;
+    top: 50%; 
+    left: 65%; 
+}
+
+.product-info h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.product-info h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #7B214B;
+}
+
+.product-info p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.shop-now {
+    background-color: #7B214B;
+    color: white;
+}
+
+.see-details {
+    border: 2px solid #7B214B;
+    color: #7B214B;
+}
+
+.buttons a:hover {
+    opacity: 0.8;
+}
+
+.product-image img {
+    width: 500px;
+}
+
+.product-options {
+    margin-top: 50px;
+}
+
+.options img {
+    width: 70px;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.options img:hover {
+    transform: scale(1.1);
+}
