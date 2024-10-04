@@ -23,28 +23,48 @@ header {
     font-weight: bold;
 }
 
-.logo span {
-    color: #7B214B; /* Cor destacada */
-}
+/* Estilo para o texto em negrito */
+.preto {
+    font-weight: bold;
+    color: black; /* Cor preta para o texto */
+    font-size: 30px;
+  }
+  
+  /* Estilo para o texto com contorno */
+  .linha {
+    font-weight: normal;
+    color: transparent; /* Torna o preenchimento do texto transparente */
+    -webkit-text-stroke: 1px #6D283F; /* Define a cor do contorno e a espessura */
+    font-size: 30px; /* Ajuste o tamanho conforme necessário */
+  }
+  
 
 nav ul {
     list-style: none;
     display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
 nav ul li {
     margin: 0 20px;
+    align-items: center;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
+
+    justify-content:center;
+    align-items: center;
 }
 
 .carrinho {
-   width:10%;
-   height: 10%;
+    width: 50px; /* Ajuste o valor conforme necessário */
+    height: auto; /* Isso mantém a proporção da imagem */
+    display: block; /* Garante que a imagem seja tratada corretamente */
+   
 }
 
 main {
@@ -64,6 +84,8 @@ main {
     transform: scale(1.5) translate(-40%, -40%) rotateZ(-37deg); 
   
 }
+
+
 
 .black-square {
     width: 1000px; /* Ajuste a largura conforme necessário */
@@ -88,6 +110,7 @@ main {
     padding-left: 20px; /* Espaço entre o traço e o texto */
     border-left: 5px solid #7B214B; /* Cria o traço ao lado do texto */
     display: inline-block; /* Para o título ocupar apenas o espaço necessário */
+    position:50px;
 }
 .tracinho{
     background-color: #7B214B;
@@ -97,7 +120,7 @@ main {
     display: flex;
     align-items: start; /* Centraliza verticalmente */
     justify-content: start; /* Centraliza horizontalmente */
-    flex-direction:initial; /* Alinha itens verticalmente */
+    flex-direction: column; /* Alinha itens verticalmente */
 }
 .descricao {
     position: relative;
@@ -158,16 +181,22 @@ main {
 
 .product-options {
     margin-top: 50px;
+    box-shadow: #333;
 }
 
 .options img {
     width: 70px;
+    position:fixed;
     margin: 0 10px;
     border-radius: 50%;
     transition: 0.3s;
     transform: rotateZ(-37deg);
+    align-items: flex-end;
+    border-color: #555;
+    box-shadow: #333;
 }
 
 .options img:hover {
     transform: scale(1.1);
+    box-shadow: #333;
 }
