@@ -107,7 +107,74 @@ nav ul li a {
     color: black; /* Cor preta quando o mouse passa */
   }
   
+  .title-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+/* Centraliza o container inteiro */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Centraliza verticalmente em relação à viewport */
+  text-align: center; /* Centraliza o texto e os itens dentro do container */
+}
 
+/* Ajuste para o logo e título */
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo do traço */
+.title::before {
+  content: '';
+  width: 60px; /* Largura do traço */
+  height: 3px; /* Altura do traço */
+  background-color: #7B214B; /* Cor do traço */
+  margin-right: 10px; /* Espaço entre o traço e o título */
+}
+
+/* Estilo da descrição */
+.description {
+  font-size: 18px;
+  color: #666666;
+  margin-top: 10px; /* Espaço entre o título e a descrição */
+  max-width: 600px; /* Limita a largura do texto da descrição */
+}
+
+/* Ajuste de espaçamento geral */
+.container {
+  padding: 0 20px; /* Espaçamento interno para evitar que o conteúdo grude nas bordas */
+}
+
+  
+  .title {
+    font-family: 'Arial', sans-serif;
+    font-size: 38px; /* Ajuste conforme necessário */
+    font-weight: bold;
+    position: relative; /* Para permitir o uso de ::before */
+  }
+  
+  .title::before {
+    content: '';
+    display: inline-block;
+    width: 60px; /* Ajuste o comprimento do traço */
+    height: 3px; /* Espessura do traço */
+    background-color: #7B214B; /* Cor do traço */
+    position: absolute;
+    left: -80px; /* Ajuste a posição horizontal */
+    top: 50%; /* Alinha verticalmente ao centro do texto */
+    transform: translateY(-50%);
+  }
+  
+  
 .carrinho {
     width: 50px; /* Ajuste o valor conforme necessário */
     height: auto; /* Isso mantém a proporção da imagem */
@@ -130,7 +197,7 @@ main {
     width: 300px; 
     z-index: 3;
     transform: scale(1.5) translate(-40%, -40%) rotateZ(-37deg); 
-    
+    filter: drop-shadow(0 0 0.5rem rgb(0, 0, 0));
 }
 
 
@@ -156,48 +223,47 @@ main {
     font-size: 36px; /* Tamanho do título */
     margin: 10px 0; /* Margem em cima e embaixo do título */
     padding-left: 20px; /* Espaço entre o traço e o texto */
-    border-left: 5px solid #7B214B; /* Cria o traço ao lado do texto */
     display: inline-block; /* Para o título ocupar apenas o espaço necessário */
     position:50px;
 }
 .tracinho{
-    background-color: #7B214B;
-    position: center;
-    width: 20px;
-    height: 100px;
-    display: flex;
-    align-items: start; /* Centraliza verticalmente */
-    justify-content: start; /* Centraliza horizontalmente */
-    flex-direction: column; /* Alinha itens verticalmente */
+    border: none; /* Remove a borda padrão */
+    height: 2px; /* Espessura da linha */
+    background-color: grey; /* Cor da linha */
+    width: 80%; /* Largura da linha */
+    margin: 20px auto; /* Espaçamento e centralização */
 }
 .descricao {
-    position: center;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    flex-direction: column; /* Alinha itens verticalmente */
+    font-size: 18px;
+    margin: 20px 0;
+    color: #b1b1b1;
+    text-align: center;
+    justify-content: center;
 }
 .product-info h2 {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .product-info h1 {
-    font-size: 70px;
+    font-size: 98px;
     font-weight: bold;
     color: #000000;
     text-align: center;
     font-style: italic;
     font-style: oblique;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .product-info p {
     font-size: 18px;
     margin: 20px 0;
-    color: #555;
+    color: #b1b1b1;
 }
 
 .buttons {
@@ -232,22 +298,25 @@ main {
 }
 
 .product-options {
-    margin-top: 50px;
-    box-shadow: #333;
+    position: absolute;
+    bottom: 20px; /* Alinha as opções mais ao fundo */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    display: flex;
+    gap: 20px;
 }
 
 .options img {
     width: 80px;
-    height:80px;
-    margin: 0 10px;
+    height: 80px;
     border-radius: 50%;
+    border: 2px  #7B214B; /* Cor da borda */
     transition: 0.3s;
     transform: rotateZ(-37deg);
-    border-color: #ff0000;
-    box-shadow: #333;
 }
 
 .options img:hover {
-    transform: scale(1.1);
-    box-shadow: #333;
+    transform: scale(1.2);
 }
+
+
