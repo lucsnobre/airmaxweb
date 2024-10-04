@@ -239,17 +239,21 @@ main {
     color: #b1b1b1;
     text-align: center;
     justify-content: center;
+    align-items: center;
+    margin-left:440px;
 }
 .product-info h2 {
-    font-size: 42px;
+    font-size: 62px;
     font-weight: bold;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-left: 630px;
+    margin-top: 50px;
 }
 
 .product-info h1 {
-    font-size: 98px;
+    font-size: 118px;
     font-weight: bold;
     color: #000000;
     text-align: center;
@@ -258,6 +262,8 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-left: 440px;
+    
 }
 
 .product-info p {
@@ -277,16 +283,18 @@ main {
     font-size: 16px;
     border-radius: 25px;
     transition: 0.3s;
+    
 }
 
 .shop-now {
     background-color: #7B214B;
     color: white;
+    margin-left: 570px;
 }
 
 .see-details {
-    border: 2px solid #7B214B;
-    color: #7B214B;
+    margin-right: 200px;
+    color: #9d9d9d;
 }
 
 .buttons a:hover {
