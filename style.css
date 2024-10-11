@@ -322,26 +322,67 @@ main {
 }
 /*transform: translateY(-50%);*/
 
+.option{
+  gap: 20px
+}
+
 .product-options {
   position: absolute;
   top: 70%; /* Ajuste conforme necessário */
-  left: 70%; /* Ajuste horizontalmente conforme necessário */
+  left: 65%; /* Ajuste horizontalmente conforme necessário */
+  
   transform: translateY(-50%);
   display: flex;
-  margin-right: 40px;
+ 
+  flex-direction: row;
 }
 
 .options img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  border: 2px solid #7B214B;
-  transition: 0.6s;
+  border: 3px solid #7B214B;
+  transition: 0.3s;
   transform: rotateZ(-35deg); /* Remover a rotação para um alinhamento natural */
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Sombra leve atrás dos círculos */
+  margin-right: 40px;
+}
 
+.options img:last-child {
+  margin-right: 4px; /* Remove a margem direita do último item */
 }
 
 .options img:hover {
   transform: scale(1.2);
+}
+
+/* Esconde o botão de rádio */
+input[type="radio"] {
+    display: none;
+}
+
+/* Estilo das opções de tênis */
+.options label {
+    display: inline-block;
+    position: relative;
+}
+
+/* Estilo das imagens de tênis */
+.options img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid transparent; /* Sem borda por padrão */
+    transition: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Sombra leve */
+}
+
+/* Estilo da imagem quando a opção está selecionada */
+input[type="radio"]:checked + img {
+    border: 2px solid #7B214B; /* Borda colorida quando clicada */
+}
+
+/* Estilo hover */
+.options img:hover {
+    transform: scale(1.2);
 }
