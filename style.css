@@ -107,6 +107,11 @@ nav ul li a {
     color: black; /* Cor preta quando o mouse passa */
   }
   
+  .main {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o texto com a linha */
+}
+
   .title-section {
     display: flex;
     justify-content: center;
@@ -241,6 +246,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-left:440px;
+    white-space: nowrap;
 }
 .product-info h2 {
     font-size: 62px;
@@ -302,10 +308,13 @@ main {
 }
 
 .line {
-  width: 130px; /* Comprimento da linha */
-  height: 4px; /* Espessura da linha */
-  background-color: #9D1C4E; /* Cor bordô */
-  margin-left: 100px; /* Ajuste o espaçamento entre a linha e o texto */
+  width: 110px; /* Comprimento da linha */
+  height: 5px; /* Espessura da linha */
+  background-color: #7B214B; /* Cor bordô */
+  margin-left: 610px; /* Ajuste o espaçamento entre a linha e o texto */ 
+  position: relative;
+  top: 100px;
+  
 }
 
 .product-image img {
