@@ -296,9 +296,16 @@ main {
     margin-right: 200px;
     color: #9d9d9d;
 }
-
+ 
 .buttons a:hover {
     opacity: 0.8;
+}
+
+.line {
+  width: 130px; /* Comprimento da linha */
+  height: 4px; /* Espessura da linha */
+  background-color: #9D1C4E; /* Cor bordô */
+  margin-left: 100px; /* Ajuste o espaçamento entre a linha e o texto */
 }
 
 .product-image img {
