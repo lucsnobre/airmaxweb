@@ -59,7 +59,7 @@ header {
   transform: rotate(-90deg);
   position: absolute;
   left: 71%;
-  top: 23%;
+  top: 26%;
   color: transparent;
   -webkit-text-stroke: 2px #6D283F;
   font-style: italic;
@@ -210,36 +210,50 @@ nav ul li a {
     top: 50%; /* Alinha verticalmente ao centro do texto */
     transform: translateY(-50%);
   }
-  
+
+
+.quadradinvermelho {
+  background-color: #7B214B;
+  width: 80px;
+  height: 80px;
+}
   /* Estilo da barra de ícones */
+/* Estilo da barra de ícones */
 .icon-bar {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 20px; /* Espaço entre os ícones */
+  gap: 50px; /* Espaço entre os ícones */
   position: absolute;
   top: 20px;
-  right: 250px; /* Distância da margem direita */
-  color: white;
+  right: 310px; /* Distância da margem direita */
 }
 
 .icon-bar a {
   display: inline-block;
+  width: 60px; /* Largura do círculo */
+  height: 60px; /* Altura do círculo */
+  border-radius: 50%; /* Faz o contorno ficar circular */
+  background-color: #292929; /* Cor do fundo do círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar os círculos */
+  transition: background-color 0.3s, transform 0.2s ease; /* Efeito de transição */
 }
 
+/* Estilo dos ícones dentro dos círculos */
 .icon-bar img {
-  width: 30px; /* Tamanho dos ícones */
-  height: 30px;
+  width: 24px; /* Tamanho dos ícones dentro do círculo */
+  height: 24px;
   cursor: pointer;
-  transition: transform 0.2s ease;
 }
 
 /* Efeito hover nos ícones */
-.icon-bar img:hover {
-  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+.icon-bar a:hover {
+  background-color: #292929; /* Muda a cor do fundo ao passar o mouse */
+  transform: scale(1.1); /* Aumenta levemente o círculo ao passar o mouse */
 }
-
-
 
 
 main {
