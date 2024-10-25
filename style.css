@@ -39,6 +39,10 @@ header {
   margin-right: 8px;
 }
 
+.logo h1 {
+  margin: 0;
+}
+
 
 /* Estilo para o texto em negrito */
 .preto {
@@ -216,17 +220,19 @@ nav ul li a {
     background-color: #7B214B;
     width: 80px;
     height: 80px;
+    display: flex;
+    justify-content: center;
     margin-right: 100px;
-    margin-top: -20px; /* Mantém o quadrado levantado */
-    display: flex; /* Ativa o Flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center;
+    position: relative; /* Permite mover o quadrado sem afetar os outros elementos */
+    top: -20px; /* Move o quadradinho para cima */
   }
   
   .quadradinvermelho img {
-    width: 55px; /* Ajuste o tamanho da imagem */
-    height: 55px;
+    width: 40px;
+    height: 40px;
   }
+  
   
   
   /* Estilo da barra de ícones */
