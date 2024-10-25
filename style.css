@@ -212,14 +212,23 @@ nav ul li a {
   }
 
 
-.quadradinvermelho {
-  background-color: #7B214B;
-  width: 80px;
-  height: 80px;
-  margin-bottom: 100px;
-  margin-right: 100px;
-
-}
+  .quadradinvermelho {
+    background-color: #7B214B;
+    width: 80px;
+    height: 80px;
+    margin-right: 100px;
+    margin-top: -20px; /* Mantém o quadrado levantado */
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }
+  
+  .quadradinvermelho img {
+    width: 55px; /* Ajuste o tamanho da imagem */
+    height: 55px;
+  }
+  
+  
   /* Estilo da barra de ícones */
 /* Estilo da barra de ícones */
 .icon-bar {
